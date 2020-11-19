@@ -367,7 +367,9 @@ body {
           &__datetime {
             margin-bottom: 20px;
             display: flex;
-            justify-content: space-between;
+            @media (min-width: 768px) {
+              justify-content: space-between;
+            }
             @media (min-width: 1440px) {
               padding-right: 20px;
             }
@@ -388,12 +390,22 @@ body {
             &__time {
               width: 90px;
             }
+            &__date {
+              width: 110px;
+              margin-right: 40px;
+              @media (min-width: 768px) {
+                width: initial;
+                margin-right: 0;
+              }
+            }
           }
           &__buttons {
             padding: 15px 0;
             border-top: 1px solid #eaeaea;
             display: flex;
-            justify-content: space-between;
+            @media (min-width: 768px) {
+              justify-content: space-between;
+            }
             @media (min-width: 1440px) {
               padding-right: 20px;
             }
@@ -410,7 +422,12 @@ body {
             &--accept {
               color: $purple;
               transition: $transition;
-              margin-right: 10px;
+              width: 110px;
+              margin-right: 40px;
+              @media (min-width: 768px) {
+                width: initial;
+                margin-right: 10px;
+              }
               &:hover {
                 color: $yellow;
               }

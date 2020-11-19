@@ -685,9 +685,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .content__section--booking .section__body .b-block__datetime {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -713,15 +718,32 @@ body {
   width: 90px;
 }
 
+.content__section--booking .section__body .b-block__datetime__date {
+  width: 110px;
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .content__section--booking .section__body .b-block__datetime__date {
+    width: initial;
+    margin-right: 0;
+  }
+}
+
 .content__section--booking .section__body .b-block__buttons {
   padding: 15px 0;
   border-top: 1px solid #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .content__section--booking .section__body .b-block__buttons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -745,7 +767,15 @@ body {
   color: #69519e;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  margin-right: 10px;
+  width: 110px;
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .content__section--booking .section__body .b-block__buttons--accept {
+    width: initial;
+    margin-right: 10px;
+  }
 }
 
 .content__section--booking .section__body .b-block__buttons--accept:hover {
